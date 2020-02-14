@@ -13,4 +13,5 @@ set(POCO_INCLUDE_DIR ${CMAKE_SOURCE_DIR}/lib/poco/include)
 set(POCO_LIBRARY_DIR ${CMAKE_SOURCE_DIR}/lib/poco/lib)
 set(RAPIDJSON_INCLUDE_DIR ${CMAKE_SOURCE_DIR}/lib/rapidjson/include)
 
+add_subdirectory(src/http_server_v1)
 add_subdirectory(src/test_features)
