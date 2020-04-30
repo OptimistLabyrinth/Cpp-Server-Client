@@ -13,5 +13,6 @@ set(GLOG_INCLUDE_DIR ${GLOG_ROOT_DIR}/include)
 set(GLOG_LIBRARY_DIR ${GLOG_ROOT_DIR}/lib)
 set(RAPIDJSON_INCLUDE_DIR ${RAPIDJSON_ROOT_DIR}/include)
 
-add_subdirectory(src/http_server_v1)
 add_subdirectory(src/test_features)
+add_subdirectory(src/v1_ssl_client)
+add_subdirectory(src/v1_ssl_server)
