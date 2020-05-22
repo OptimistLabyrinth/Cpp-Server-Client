@@ -45,9 +45,9 @@ openssl dhparam -out dh2048.pem 2048
 ```c++
 // Server-side
 use_certificate_chain_file("user.crt");
-use_private_key_file("user.key");
+use_private_key_file("user.key", boost::asio::ssl::context::pem);
 use_tmp_dh_file("dh2048.pem");
 
 // Client-side
-load_verify_file("root.crt");
+load_verify_file("rootca.crt");
 ```
